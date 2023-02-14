@@ -41,9 +41,9 @@ which generates a .jar file, which you can then use to run you java application.
 ```
 $ java -cp target/ElastiCacheIAMAuthDemoApp-1.0-SNAPSHOT.jar \
 	com.amazon.elasticache.IAMAuthTokenGeneratorApp \
-	--region us-east-1 \
-	--replication-group-id iam-test-rg-01 \
-	--user-id iam-test-user-01
+	--region us-west-2 \
+	--replication-group-id utsav-shared-pubsub \
+	--user-id iam-redis
 ```
 
 ### Now to connect to a cluster using the demo app
@@ -57,9 +57,9 @@ NOTE:
 ```
 $ java -jar target/ElastiCacheIAMAuthDemoApp-1.0-SNAPSHOT.jar \
 	--redis-host <host> \
-	--region us-east-1 \
-	--replication-group-id iam-test-rg-01 \
-	--user-id iam-test-user-01 \
+	--region us-west-2 \
+	--replication-group-id utsav-shared-pubsub \
+	--user-id iam-redis \
 	--tls
 ```
 
